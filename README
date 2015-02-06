@@ -1,0 +1,17 @@
+create a folder for the site to want to crawl.
+Eg. google.com
+
+$ mkdir google.com
+
+change the cwd to google.com
+$ cd google.com
+
+get the pages for diff UA
+$ python ../wget.py http://google.com
+
+get the difference
+$ python ../find_diff.py
+
+to undiff anyfolder run say 1_tmp
+$ python ../patch_directories 0 1_tmp
+[Please remove the / at the end]
